@@ -7,22 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		358F63F8C4A491E10D528100 /* Pods_chris_mom_game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8145FD1D8126AA83C469B2 /* Pods_chris_mom_game.framework */; };
+		D00637FD296FC6AF00AAA2A3 /* BannerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00637FC296FC6AF00AAA2A3 /* BannerModifier.swift */; };
+		D00637FF296FE7E700AAA2A3 /* LoginViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00637FE296FE7E700AAA2A3 /* LoginViewModal.swift */; };
+		D04F523D296BC74600B010D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D04F523C296BC74600B010D8 /* Assets.xcassets */; };
+		D04F5240296BD44100B010D8 /* 43016.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D04F523F296BD44100B010D8 /* 43016.jpg */; };
+		D04F5243296BD52D00B010D8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04F5242296BD52D00B010D8 /* Launch Screen.storyboard */; };
+		D0804F3D29648ED300BBDD84 /* DareMessageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0804F3C29648ED200BBDD84 /* DareMessageTextView.swift */; };
 		D0BAC947296309EF00902331 /* chris_mom_gameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC946296309EF00902331 /* chris_mom_gameApp.swift */; };
 		D0BAC949296309EF00902331 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC948296309EF00902331 /* ContentView.swift */; };
-		D0BAC94B296309F000902331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BAC94A296309F000902331 /* Assets.xcassets */; };
 		D0BAC94E296309F000902331 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BAC94D296309F000902331 /* Preview Assets.xcassets */; };
 		D0BAC950296309F000902331 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC94F296309F000902331 /* Persistence.swift */; };
 		D0BAC953296309F000902331 /* chris_mom_game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC951296309F000902331 /* chris_mom_game.xcdatamodeld */; };
+		D0BAC95B2963258200902331 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC95A2963258200902331 /* AppDelegate.swift */; };
+		D0BAC95E296328A400902331 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC95D296328A400902331 /* AuthenticationService.swift */; };
+		D0BAC96229632D6400902331 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0BAC96129632D6400902331 /* GoogleService-Info.plist */; };
+		D0BAC96629632E7500902331 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC96529632E7500902331 /* LandingView.swift */; };
+		D0BAC96829632E8100902331 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC96729632E8100902331 /* LoginView.swift */; };
+		D0BAC96A29632E8E00902331 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC96929632E8E00902331 /* RegisterView.swift */; };
+		D0BAC96C2963308800902331 /* UserDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC96B2963308800902331 /* UserDetailService.swift */; };
+		D0BAC96E2963315100902331 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC96D2963315100902331 /* MainView.swift */; };
+		D0BAC9702963321D00902331 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC96F2963321D00902331 /* Validators.swift */; };
+		D0BAC9722963351600902331 /* UserDetailsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC9712963351600902331 /* UserDetailsModal.swift */; };
+		D0BAC974296338B600902331 /* string-constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC973296338B600902331 /* string-constants.swift */; };
+		D0BAC976296346AC00902331 /* JoinButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC975296346AC00902331 /* JoinButtonView.swift */; };
+		D0BAC978296403CD00902331 /* TabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC977296403CD00902331 /* TabViews.swift */; };
+		D0BAC97A2964047100902331 /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC9792964047100902331 /* PlayerListView.swift */; };
+		D0BAC97C2964082300902331 /* SendingDareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC97B2964082300902331 /* SendingDareView.swift */; };
+		D0BAC97E2964083200902331 /* DareDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC97D2964083200902331 /* DareDetailsView.swift */; };
+		D0BAC9802964203600902331 /* SendingDareViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC97F2964203600902331 /* SendingDareViewCell.swift */; };
+		D0BAC9822964282B00902331 /* DareDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC9812964282B00902331 /* DareDetailViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E8145FD1D8126AA83C469B2 /* Pods_chris_mom_game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chris_mom_game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71552BA9CE66EE4033564F75 /* Pods-chris-mom-game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chris-mom-game.release.xcconfig"; path = "Target Support Files/Pods-chris-mom-game/Pods-chris-mom-game.release.xcconfig"; sourceTree = "<group>"; };
+		81EFAC68E12035C03A564812 /* Pods-chris-mom-game.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chris-mom-game.debug.xcconfig"; path = "Target Support Files/Pods-chris-mom-game/Pods-chris-mom-game.debug.xcconfig"; sourceTree = "<group>"; };
+		D00637FC296FC6AF00AAA2A3 /* BannerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerModifier.swift; sourceTree = "<group>"; };
+		D00637FE296FE7E700AAA2A3 /* LoginViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModal.swift; sourceTree = "<group>"; };
+		D04F523C296BC74600B010D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
+		D04F523F296BD44100B010D8 /* 43016.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 43016.jpg; path = "../../../../Downloads/seamless-red-gift-boxes-pattern/43016.jpg"; sourceTree = "<group>"; };
+		D04F5241296BD47700B010D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D04F5242296BD52D00B010D8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D0804F3C29648ED200BBDD84 /* DareMessageTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareMessageTextView.swift; sourceTree = "<group>"; };
 		D0BAC943296309EF00902331 /* chris-mom-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chris-mom-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BAC946296309EF00902331 /* chris_mom_gameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chris_mom_gameApp.swift; sourceTree = "<group>"; };
 		D0BAC948296309EF00902331 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D0BAC94A296309F000902331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0BAC94D296309F000902331 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D0BAC94F296309F000902331 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		D0BAC952296309F000902331 /* chris_mom_game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = chris_mom_game.xcdatamodel; sourceTree = "<group>"; };
+		D0BAC95A2963258200902331 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0BAC95D296328A400902331 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		D0BAC96129632D6400902331 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/untitled folder/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D0BAC96529632E7500902331 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		D0BAC96729632E8100902331 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D0BAC96929632E8E00902331 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		D0BAC96B2963308800902331 /* UserDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailService.swift; sourceTree = "<group>"; };
+		D0BAC96D2963315100902331 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D0BAC96F2963321D00902331 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
+		D0BAC9712963351600902331 /* UserDetailsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsModal.swift; sourceTree = "<group>"; };
+		D0BAC973296338B600902331 /* string-constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "string-constants.swift"; sourceTree = "<group>"; };
+		D0BAC975296346AC00902331 /* JoinButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinButtonView.swift; sourceTree = "<group>"; };
+		D0BAC977296403CD00902331 /* TabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViews.swift; sourceTree = "<group>"; };
+		D0BAC9792964047100902331 /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
+		D0BAC97B2964082300902331 /* SendingDareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingDareView.swift; sourceTree = "<group>"; };
+		D0BAC97D2964083200902331 /* DareDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareDetailsView.swift; sourceTree = "<group>"; };
+		D0BAC97F2964203600902331 /* SendingDareViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingDareViewCell.swift; sourceTree = "<group>"; };
+		D0BAC9812964282B00902331 /* DareDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareDetailViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +81,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358F63F8C4A491E10D528100 /* Pods_chris_mom_game.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9BF8A5AEA82AC7C0C1B7272E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81EFAC68E12035C03A564812 /* Pods-chris-mom-game.debug.xcconfig */,
+				71552BA9CE66EE4033564F75 /* Pods-chris-mom-game.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D04F523E296BD42700B010D8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				D04F523F296BD44100B010D8 /* 43016.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		D0BAC93A296309EF00902331 = {
 			isa = PBXGroup;
 			children = (
 				D0BAC945296309EF00902331 /* chris-mom-game */,
 				D0BAC944296309EF00902331 /* Products */,
+				9BF8A5AEA82AC7C0C1B7272E /* Pods */,
+				F86633D9C8850AA27A311121 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,12 +126,20 @@
 		D0BAC945296309EF00902331 /* chris-mom-game */ = {
 			isa = PBXGroup;
 			children = (
+				D04F5241296BD47700B010D8 /* Info.plist */,
+				D04F523E296BD42700B010D8 /* images */,
+				D0BAC96429632DD700902331 /* modals */,
+				D0BAC96329632DB000902331 /* viewmodal */,
+				D0BAC95C2963284E00902331 /* services */,
+				D0BAC95929630A9700902331 /* views */,
 				D0BAC946296309EF00902331 /* chris_mom_gameApp.swift */,
-				D0BAC948296309EF00902331 /* ContentView.swift */,
-				D0BAC94A296309F000902331 /* Assets.xcassets */,
 				D0BAC94F296309F000902331 /* Persistence.swift */,
+				D04F523C296BC74600B010D8 /* Assets.xcassets */,
 				D0BAC951296309F000902331 /* chris_mom_game.xcdatamodeld */,
+				D04F5242296BD52D00B010D8 /* Launch Screen.storyboard */,
+				D0BAC96129632D6400902331 /* GoogleService-Info.plist */,
 				D0BAC94C296309F000902331 /* Preview Content */,
+				D0BAC973296338B600902331 /* string-constants.swift */,
 			);
 			path = "chris-mom-game";
 			sourceTree = "<group>";
@@ -73,6 +152,62 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		D0BAC95929630A9700902331 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D0BAC948296309EF00902331 /* ContentView.swift */,
+				D0BAC95A2963258200902331 /* AppDelegate.swift */,
+				D0BAC96529632E7500902331 /* LandingView.swift */,
+				D0BAC96729632E8100902331 /* LoginView.swift */,
+				D0BAC96929632E8E00902331 /* RegisterView.swift */,
+				D0BAC96D2963315100902331 /* MainView.swift */,
+				D0BAC975296346AC00902331 /* JoinButtonView.swift */,
+				D0BAC977296403CD00902331 /* TabViews.swift */,
+				D0BAC9792964047100902331 /* PlayerListView.swift */,
+				D0BAC97B2964082300902331 /* SendingDareView.swift */,
+				D0BAC97F2964203600902331 /* SendingDareViewCell.swift */,
+				D0804F3C29648ED200BBDD84 /* DareMessageTextView.swift */,
+				D0BAC97D2964083200902331 /* DareDetailsView.swift */,
+				D0BAC9812964282B00902331 /* DareDetailViewCell.swift */,
+				D00637FC296FC6AF00AAA2A3 /* BannerModifier.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D0BAC95C2963284E00902331 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				D0BAC95D296328A400902331 /* AuthenticationService.swift */,
+				D0BAC96B2963308800902331 /* UserDetailService.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		D0BAC96329632DB000902331 /* viewmodal */ = {
+			isa = PBXGroup;
+			children = (
+				D00637FE296FE7E700AAA2A3 /* LoginViewModal.swift */,
+			);
+			path = viewmodal;
+			sourceTree = "<group>";
+		};
+		D0BAC96429632DD700902331 /* modals */ = {
+			isa = PBXGroup;
+			children = (
+				D0BAC96F2963321D00902331 /* Validators.swift */,
+				D0BAC9712963351600902331 /* UserDetailsModal.swift */,
+			);
+			path = modals;
+			sourceTree = "<group>";
+		};
+		F86633D9C8850AA27A311121 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E8145FD1D8126AA83C469B2 /* Pods_chris_mom_game.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0BAC956296309F000902331 /* Build configuration list for PBXNativeTarget "chris-mom-game" */;
 			buildPhases = (
+				55CD389862374E1BA52E82D2 /* [CP] Check Pods Manifest.lock */,
 				D0BAC93F296309EF00902331 /* Sources */,
 				D0BAC940296309EF00902331 /* Frameworks */,
 				D0BAC941296309EF00902331 /* Resources */,
+				97940614374316E2F42A73F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,21 +269,86 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0BAC94E296309F000902331 /* Preview Assets.xcassets in Resources */,
-				D0BAC94B296309F000902331 /* Assets.xcassets in Resources */,
+				D04F523D296BC74600B010D8 /* Assets.xcassets in Resources */,
+				D04F5240296BD44100B010D8 /* 43016.jpg in Resources */,
+				D04F5243296BD52D00B010D8 /* Launch Screen.storyboard in Resources */,
+				D0BAC96229632D6400902331 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		55CD389862374E1BA52E82D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chris-mom-game-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97940614374316E2F42A73F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chris-mom-game/Pods-chris-mom-game-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chris-mom-game/Pods-chris-mom-game-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chris-mom-game/Pods-chris-mom-game-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0BAC93F296309EF00902331 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BAC96A29632E8E00902331 /* RegisterView.swift in Sources */,
 				D0BAC950296309F000902331 /* Persistence.swift in Sources */,
+				D0BAC9722963351600902331 /* UserDetailsModal.swift in Sources */,
 				D0BAC953296309F000902331 /* chris_mom_game.xcdatamodeld in Sources */,
+				D0BAC96C2963308800902331 /* UserDetailService.swift in Sources */,
+				D0BAC96629632E7500902331 /* LandingView.swift in Sources */,
+				D0BAC976296346AC00902331 /* JoinButtonView.swift in Sources */,
+				D0BAC9802964203600902331 /* SendingDareViewCell.swift in Sources */,
 				D0BAC949296309EF00902331 /* ContentView.swift in Sources */,
+				D0BAC9822964282B00902331 /* DareDetailViewCell.swift in Sources */,
+				D0BAC95E296328A400902331 /* AuthenticationService.swift in Sources */,
+				D00637FD296FC6AF00AAA2A3 /* BannerModifier.swift in Sources */,
+				D0BAC97E2964083200902331 /* DareDetailsView.swift in Sources */,
+				D0BAC974296338B600902331 /* string-constants.swift in Sources */,
+				D0BAC97A2964047100902331 /* PlayerListView.swift in Sources */,
+				D0BAC978296403CD00902331 /* TabViews.swift in Sources */,
+				D00637FF296FE7E700AAA2A3 /* LoginViewModal.swift in Sources */,
+				D0804F3D29648ED300BBDD84 /* DareMessageTextView.swift in Sources */,
+				D0BAC96E2963315100902331 /* MainView.swift in Sources */,
+				D0BAC9702963321D00902331 /* Validators.swift in Sources */,
+				D0BAC95B2963258200902331 /* AppDelegate.swift in Sources */,
+				D0BAC96829632E8100902331 /* LoginView.swift in Sources */,
 				D0BAC947296309EF00902331 /* chris_mom_gameApp.swift in Sources */,
+				D0BAC97C2964082300902331 /* SendingDareView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,20 +471,24 @@
 		};
 		D0BAC957296309F000902331 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81EFAC68E12035C03A564812 /* Pods-chris-mom-game.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"chris-mom-game/Preview Content\"";
 				DEVELOPMENT_TEAM = FK46LLGFK4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "chris-mom-game/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,20 +504,24 @@
 		};
 		D0BAC958296309F000902331 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71552BA9CE66EE4033564F75 /* Pods-chris-mom-game.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"chris-mom-game/Preview Content\"";
 				DEVELOPMENT_TEAM = FK46LLGFK4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "chris-mom-game/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
