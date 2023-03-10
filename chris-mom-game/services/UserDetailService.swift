@@ -12,8 +12,13 @@ import FirebaseFirestore
 class UserDetailService : ObservableObject{
     let dataBase = Firestore.firestore()
     let userDefaults = UserDefaults.standard
-    
     @Published var playerDetails = [MemberDetailModel]()
+    
+    
+    init(){
+        self.getMemberDetails()
+    }
+    
     
     func getCurrentUserName() -> String{
         return  UserDefaults.standard.string(forKey: "userName") ?? ""
@@ -36,7 +41,6 @@ class UserDetailService : ObservableObject{
         }
         return false
     }
-    
     func getCurrentUserdocumentId() -> String {
         return UserDefaults.standard.string(forKey: "currentUserDocumentId") ?? ""
     }
@@ -65,11 +69,11 @@ class UserDetailService : ObservableObject{
         dataBase.collection(Strings.FBase.memberDetails).document(getCurrentUserdocumentId())
             .setData([Strings.FBase.isParticipating: true] ,merge: true) { (error) in
                 if let e = error {
-                    print("There was and issue, \(e)")
-                    print("There was and issue")
+                    print("There was and issue in adding player to participation list, \(e)")
+                    
                 }else{
                     DispatchQueue.main.async {
-                        print("SuccessFully added the player \(self.getCurrentUserName())")
+                        print("SuccessFully add the player to participation list")
                     }
                     
                 }
@@ -116,11 +120,10 @@ class UserDetailService : ObservableObject{
             dataBase.collection(Strings.FBase.memberDetails).document(getDocumentId(membername: memberName))
                 .setData([Strings.FBase.childName: childName] ,merge: true) { (error) in
                     if let e = error {
-                        print("There was and issue, \(e)")
-                        print("There was and issue")
+                        print("There was and issue in sending mom and child details to firebase, \(e)")
                     }else{
                         DispatchQueue.main.async {
-                            print("SuccessFully added the player \(self.getCurrentUserName())")
+                            print("SuccessFully sending mom and child details to firebase")
                         }
                         
                     }
@@ -129,16 +132,14 @@ class UserDetailService : ObservableObject{
     }
     
     func sendDareMessage(dareMessage: String, childname: String){
-        print(dareMessage, childname)
         
         dataBase.collection(Strings.FBase.memberDetails).document(getDocumentId(membername: childname))
             .setData([Strings.FBase.dareMessage: dareMessage] ,merge: true) { (error) in
                 if let e = error {
-                    print("There was and issue, \(e)")
-                    print("There was and issue")
+                    print("There was and issue in sending the dare message to child, \(e)")
                 }else{
                     DispatchQueue.main.async {
-                        print("SuccessFully send the dare message \(dareMessage)")
+                        print("SuccessFully send the dare message to child \(dareMessage)")
                     }
                     
                 }
@@ -166,16 +167,15 @@ class UserDetailService : ObservableObject{
             dataBase.collection(Strings.FBase.memberDetails).document(player.documentId)
                 .setData([Strings.FBase.isParticipating: false, Strings.FBase.childName : "", Strings.FBase.isCompleted : false,  Strings.FBase.dareMessage : "",] ,merge: true) { (error) in
                     if let e = error {
-                        print("There was and issue, \(e)")
-                        print("There was and issue")
+                        print("There was and issue in reset the game, \(e)")
+                       
                     }else{
                         DispatchQueue.main.async {
-                            print("SuccessFully send the dare message ")
+                            print("SuccessFully reset the game")
                         }
                         
                     }
                 }
-            
         }
         
     }
@@ -187,11 +187,11 @@ class UserDetailService : ObservableObject{
         dataBase.collection(Strings.FBase.memberDetails).document(getDocumentId(membername: childName))
             .setData([Strings.FBase.isCompleted: completionStatus] ,merge: true) { (error) in
                 if let e = error {
-                    print("There was and issue, \(e)")
-                    print("There was and issue")
+                    print("There was and issue in updating the completion status of child dare, \(e)")
+                  
                 }else{
                     DispatchQueue.main.async {
-                        print("SuccessFully Send the completion status \(completionStatus)")
+                        print("SuccessFully updated the completion status of child dare\(completionStatus)")
                     }
                     
                 }
@@ -205,6 +205,7 @@ class UserDetailService : ObservableObject{
                 if let e = error {
                     print("There was an issue retrieving data from firestore \(e)")
                 }else{
+                    print("Successfullu retrieving data from firestore")
                     if let snapShotDocuments =  querySnapshot?.documents {
                         self.playerDetails = []
                         
@@ -221,6 +222,7 @@ class UserDetailService : ObservableObject{
                                 if ( userId == self.getCurrentUserMailId()){
                                     self.userDefaults.set(userName, forKey: "userName")
                                     self.userDefaults.set(documentId, forKey: "currentUserDocumentId")
+                                    self.userDefaults.set(userId, forKey: "currentUserMailId")
                                 }
                                 self.playerDetails.append(MemberDetailModel(memberName: userName, memberMailId: userId, documentId: documentId,
                                                                             isParticipating: isParticipating, childName: childName, dareMessage: dareMessage, isCompleted: isCompleted))
@@ -244,16 +246,15 @@ class UserDetailService : ObservableObject{
                              Strings.FBase.isCompleted : false
                             ]) { (error) in
             if let e = error {
-                print("There was and issue, \(e)")
-                print("There was and issue")
+                print("There was and issue in send user details from register form, \(e)")
+               
             }else{
                 DispatchQueue.main.async {
                     
                 }
-                print("SuccessFully send the Users list")
+                print("SuccessFully send the Users list from register form")
             }
         }
     }
-    
     
 }

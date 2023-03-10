@@ -6,7 +6,11 @@
 //
 
 import SwiftUI
-
+extension View {
+    func border(_ color: Color, width: CGFloat, cornerRadius: CGFloat) -> some View {
+        overlay(RoundedRectangle(cornerRadius: cornerRadius).stroke(color, lineWidth: width))
+    }
+}
 
 extension UIScreen{
    static let screenWidth = UIScreen.main.bounds.size.width
@@ -27,8 +31,6 @@ struct LandingView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 313, height: 313)
-                    Spacer()
-                    
                   
                     Button("REGISTER") {
                         showRegisterView()
@@ -38,10 +40,10 @@ struct LandingView: View {
                     .clipShape(Capsule())
                     .frame(width: 331, height: 88)
                     .background(.white).cornerRadius(45)
-                    .font(.system(size: 40))
-                    .frame(width: UIScreen.screenSize.width * 0.7, height: UIScreen.screenSize.height * 0.1)
+                    .font(.system(size: 35))
+                    .frame(width: UIScreen.screenSize.width * 0.7, height: UIScreen.screenSize.height * 0.074)
                     .background(Color("secondary-color")).cornerRadius(UIScreen.screenSize.width * 0.8)
-                    .font(.system(size: UIScreen.screenSize.width * 0.11))
+                    .font(.system(size: UIScreen.screenSize.width * 0.11)) .border(Color.white, width: 2, cornerRadius: UIScreen.screenSize.width * 0.8)
                     .minimumScaleFactor(0.5)
                     NavigationLink("", destination: LoginView(), isActive: $isLoginViewNavigated)
                     NavigationLink("", destination: RegisterView(), isActive: $isRegisterViewNavigated)
@@ -49,17 +51,20 @@ struct LandingView: View {
                         showLoginView()
                         print("Button pressed!")
                     }
-                    .foregroundColor(Color("Color"))
+                    .foregroundColor(Color.white)
                     .clipShape(Capsule())
                     .frame(width: 331, height: 88)
-                    .background(Color(.white)).cornerRadius(45)
-                    .font(.system(size: 40))
-                    .frame(width: UIScreen.screenSize.width * 0.7, height: UIScreen.screenSize.height * 0.1)
-                    .background(Color(.blue)).cornerRadius(UIScreen.screenSize.width * 0.8)
+                    .background(Color("Color")).cornerRadius(45)
+                    .font(.system(size: 35))
+                    .frame(width: UIScreen.screenSize.width * 0.7, height: UIScreen.screenSize.height * 0.07)
+                    .cornerRadius(UIScreen.screenSize.width * 0.8)
                     .font(.system(size: UIScreen.screenSize.width * 0.11))
                     .minimumScaleFactor(0.5)
+                    .border(Color.white, width: 2, cornerRadius: UIScreen.screenSize.width * 0.8)
+
                     Spacer()
                 }
+                Spacer()
             }.navigationViewStyle(StackNavigationViewStyle()) .edgesIgnoringSafeArea(.all)
                 
             

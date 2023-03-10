@@ -17,37 +17,47 @@ struct DareDetailViewCell: View {
     
     var body: some View {
         VStack(alignment: .leading){
+            
             HStack{
+                Text("Child name: ").fontWeight(.semibold)
                 Spacer()
-                Text("Child Name: ")  +  Text(playerDetail.memberName).foregroundColor(.blue)
-                Spacer()
+                Text(playerDetail.memberName).foregroundColor(.orange)
             }
+            
             Spacer()
+            
             HStack{
                 HStack(alignment: .top){
-                    Text("Task for her/him: ").foregroundColor(.blue).padding(.trailing)
+                    Text("Task for her/him: ").fontWeight(.semibold)
                 }
-                if(playerDetail.dareMessage != ""){
-                    Text(playerDetail.dareMessage)
-                }else{
-                    Text("Task not assigned yet.")
-                }
-            }
-            Spacer()
-            HStack{
+                
+                Spacer()
                 
                 if(playerDetail.dareMessage != ""){
-                    HStack(alignment: .top){
-                        Text("Completion Status").foregroundColor(.blue).padding(.trailing)
-                    }
-                    if(playerDetail.isCompleted){
-                        Text("Completed the dare sucessfuly")
-                    }else{
-                        Text("Dare not completed")
-                    }
+                    Text(playerDetail.dareMessage).multilineTextAlignment(.center)
+                }else{
+                    Text("Task not assigned yet.").foregroundColor(.orange).multilineTextAlignment(.center)
                 }
             }
+            
             Spacer()
+            
+            HStack{
+                HStack(alignment: .top){
+                    Text("Completion Status:").fontWeight(.semibold).padding(.trailing)
+                }
+                
+                Spacer()
+                
+                if(playerDetail.isCompleted){
+                    Text("Completed sucessfuly").foregroundColor(.green)
+                }else{
+                    Text("Not completed").foregroundColor(.orange)
+                }
+            }
+            
+            Spacer()
+            
         }
     }
 }

@@ -11,6 +11,7 @@ struct PlayerListView: View {
     @EnvironmentObject var userDetailService : UserDetailService
     let participantsList :  [MemberDetailModel]
     @State private var showingAlert = false
+    @State private var showingStartAlert = false
     init(memberDetails:  [MemberDetailModel]) {
         self.participantsList = memberDetails
     }
@@ -32,12 +33,15 @@ struct PlayerListView: View {
         return false
 
     }
-    @State var showBanner:Bool = false
+    @State var showBanner:Bool?
     @State var bannerData: BannerModifier.BannerData = BannerModifier.BannerData(title: "",  type: .Info)
     var body: some View {
         NavigationView {
+       
+            
             List {
-                Section(header: HStack{ Text("Participants List").fontWeight(.bold).foregroundColor(.blue) }) {
+                
+                Section(header: HStack{ Text("Participants names:") }) {
                     ForEach(self.participantsList, id: \.self) { item in
                         if(item.isParticipating){
                             Text(item.memberName)
@@ -51,22 +55,36 @@ struct PlayerListView: View {
                         Spacer()
                         HStack{
                             Spacer()
-                            Button("Start The Game") {
-                              self.userDetailService.generateMomAndChild()
-                                self.bannerData.title = "Sucess"
-                                self.bannerData.detail = "Sucessfully start the game"
-                                self.bannerData.type = .Success
-                                self.showBanner = true
-                            }.padding().disabled(!isStartButtonValid  || isResetButtonValid )
+                            Button("Start the game") {
+                                showingStartAlert = true
+                             
+                            }.padding()
+                                .disabled(!isStartButtonValid  || isResetButtonValid )
+                                .buttonStyle(.borderedProminent).alert(isPresented:$showingStartAlert) {
+                                Alert(
+                                    title: Text("Are you sure you want to Start the game?"),
+                                    primaryButton: .default(Text("Start"))  {
+                                        self.userDetailService.generateMomAndChild()
+                                        self.bannerData.title = "Sucess"
+                                        self.bannerData.detail = "Sucessfully Start the game"
+                                        self.bannerData.type = .Success
+                                        self.showBanner = true
+                                    },
+                                    secondaryButton: .cancel()
+                                )
+                            }
                             Spacer()
                         }
                         if(self.userDetailService.userIsAdmin()){
                             HStack{
                                 Spacer()
+                                
                                 Button("Reset the game") {
                                     showingAlert = true
                                    
-                                }.disabled( !isResetButtonValid).alert(isPresented:$showingAlert) {
+                                }.buttonStyle(.borderedProminent)
+                                    .disabled( !isResetButtonValid)
+                                    .alert(isPresented:$showingAlert) {
                                     Alert(
                                         title: Text("Are you sure you want to Reset the game?"),
                                         primaryButton: .destructive(Text("Reset")) {
@@ -82,7 +100,6 @@ struct PlayerListView: View {
                                 Spacer()
                             }
                         }
-                       
                     }) {
                         EmptyView()
                     }
@@ -90,7 +107,8 @@ struct PlayerListView: View {
                 
                 
             }
-        }.banner(data: $bannerData, show: $showBanner)
+            
+        }.banner(data: $bannerData, show: $showBanner).accentColor(.blue)
     }
 }
 

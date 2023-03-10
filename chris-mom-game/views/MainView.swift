@@ -7,58 +7,66 @@
 
 import SwiftUI
 
+func setNavigationBarBackgroundColor(backgroundColor: UIColor, titleColor: UIColor){
+   
+    let coloredAppearance = UINavigationBarAppearance()
+    coloredAppearance.configureWithTransparentBackground()
+    coloredAppearance.backgroundColor = backgroundColor
+    coloredAppearance.titleTextAttributes = [.foregroundColor: titleColor ?? .white]
+    coloredAppearance.largeTitleTextAttributes = [.foregroundColor: titleColor ?? .white]
+
+    UINavigationBar.appearance().standardAppearance = coloredAppearance
+    UINavigationBar.appearance().compactAppearance = coloredAppearance
+    UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
+}
+
+
 struct MainView: View {
     
-    @ObservedObject var authentication = AuthenticationService()
+    @ObservedObject var authentication = AuthenticationService.shared
     @EnvironmentObject var userDetailService : UserDetailService
     @State private var showingAlert = false
     @Binding var isDashboardView : Bool
+    @State private var isLoading = false
+    @State private var isParticipating = false
+    
+  
     
     var body: some View {
         NavigationView {
             VStack{
-                ZStack{
-                    Text("Dashboard View").foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color("Color").ignoresSafeArea(edges: .top))
-                        .frame(maxWidth: .infinity)
-                }
-                Spacer()
+               
+               Text("")
                     .toolbar {
                         Button {
                             Task{
                                 showingAlert = true
                             }
                         } label: {
-                            Text("LOG OUT").foregroundColor(.white)
+                            Image(systemName: "rectangle.portrait.and.arrow.right").foregroundColor(.white)
                         }.accentColor(.blue).alert(isPresented:$showingAlert) {
                             Alert(
                                 title: Text("Are you sure you want to Log out?"),
                                 primaryButton: .destructive(Text("Log out")) {
                                     isDashboardView = false
-                                    authentication.logOut()
+                                    self.authentication.logOut()
                                 },
                                 secondaryButton: .cancel()
                             )
                         }
+                    }.onAppear{
+                        setNavigationBarBackgroundColor(backgroundColor: UIColor(Color("Color")), titleColor: .white)
                     }
-                if(self.userDetailService.checkCurrentUserIsParticipating()){
                     TabViews()
-                }else{
-                    JoinButtonView()
-                    Spacer()
-                }
-//                Spacer()
+            }.accentColor(.blue) .navigationBarTitle(Text("Dashboard"), displayMode: .inline).onAppear{
+                self.userDetailService.getMemberDetails()
             }
-        }.onAppear {
-            self.userDetailService.getMemberDetails()
         }.navigationBarBackButtonHidden(true)
     }
 }
 
 //struct MainView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        MainView()
+//        MainView(isDashboardView: .constant(true))
 //    }
 //}

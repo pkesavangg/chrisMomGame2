@@ -1,0 +1,14 @@
+build/
+DerivedData/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.tmp
+*~
+*.swp
+*.bak
+*.dSYM/
+Pods/
+Carthage/
+*.xcconfig
+*.log
+*.DS_Store

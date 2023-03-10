@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		358F63F8C4A491E10D528100 /* Pods_chris_mom_game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8145FD1D8126AA83C469B2 /* Pods_chris_mom_game.framework */; };
 		D00637FD296FC6AF00AAA2A3 /* BannerModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00637FC296FC6AF00AAA2A3 /* BannerModifier.swift */; };
-		D00637FF296FE7E700AAA2A3 /* LoginViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00637FE296FE7E700AAA2A3 /* LoginViewModal.swift */; };
+		D031152529922BAE00F43619 /* LoginViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031152429922BAE00F43619 /* LoginViewModal.swift */; };
+		D031152729922BBB00F43619 /* RegisterViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D031152629922BBB00F43619 /* RegisterViewModal.swift */; };
 		D04F523D296BC74600B010D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D04F523C296BC74600B010D8 /* Assets.xcassets */; };
 		D04F5240296BD44100B010D8 /* 43016.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D04F523F296BD44100B010D8 /* 43016.jpg */; };
 		D04F5243296BD52D00B010D8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04F5242296BD52D00B010D8 /* Launch Screen.storyboard */; };
-		D0804F3D29648ED300BBDD84 /* DareMessageTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0804F3C29648ED200BBDD84 /* DareMessageTextView.swift */; };
+		D052AA8929BAEBA600C25B76 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D052AA8829BAEBA600C25B76 /* .gitignore */; };
+		D0A1BFA62993D4B800F434F0 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A1BFA52993D4B800F434F0 /* LoaderView.swift */; };
 		D0BAC947296309EF00902331 /* chris_mom_gameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC946296309EF00902331 /* chris_mom_gameApp.swift */; };
 		D0BAC949296309EF00902331 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC948296309EF00902331 /* ContentView.swift */; };
 		D0BAC94E296309F000902331 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BAC94D296309F000902331 /* Preview Assets.xcassets */; };
@@ -34,9 +36,9 @@
 		D0BAC978296403CD00902331 /* TabViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC977296403CD00902331 /* TabViews.swift */; };
 		D0BAC97A2964047100902331 /* PlayerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC9792964047100902331 /* PlayerListView.swift */; };
 		D0BAC97C2964082300902331 /* SendingDareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC97B2964082300902331 /* SendingDareView.swift */; };
-		D0BAC97E2964083200902331 /* DareDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC97D2964083200902331 /* DareDetailsView.swift */; };
-		D0BAC9802964203600902331 /* SendingDareViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC97F2964203600902331 /* SendingDareViewCell.swift */; };
+		D0BAC97E2964083200902331 /* DareListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC97D2964083200902331 /* DareListView.swift */; };
 		D0BAC9822964282B00902331 /* DareDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0BAC9812964282B00902331 /* DareDetailViewCell.swift */; };
+		D0F5833929767B9E00766EBB /* TextAreaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F5833829767B9E00766EBB /* TextAreaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,12 +46,14 @@
 		71552BA9CE66EE4033564F75 /* Pods-chris-mom-game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chris-mom-game.release.xcconfig"; path = "Target Support Files/Pods-chris-mom-game/Pods-chris-mom-game.release.xcconfig"; sourceTree = "<group>"; };
 		81EFAC68E12035C03A564812 /* Pods-chris-mom-game.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chris-mom-game.debug.xcconfig"; path = "Target Support Files/Pods-chris-mom-game/Pods-chris-mom-game.debug.xcconfig"; sourceTree = "<group>"; };
 		D00637FC296FC6AF00AAA2A3 /* BannerModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerModifier.swift; sourceTree = "<group>"; };
-		D00637FE296FE7E700AAA2A3 /* LoginViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModal.swift; sourceTree = "<group>"; };
+		D031152429922BAE00F43619 /* LoginViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModal.swift; sourceTree = "<group>"; };
+		D031152629922BBB00F43619 /* RegisterViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModal.swift; sourceTree = "<group>"; };
 		D04F523C296BC74600B010D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 		D04F523F296BD44100B010D8 /* 43016.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 43016.jpg; path = "../../../../Downloads/seamless-red-gift-boxes-pattern/43016.jpg"; sourceTree = "<group>"; };
 		D04F5241296BD47700B010D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D04F5242296BD52D00B010D8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		D0804F3C29648ED200BBDD84 /* DareMessageTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareMessageTextView.swift; sourceTree = "<group>"; };
+		D052AA8829BAEBA600C25B76 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D0A1BFA52993D4B800F434F0 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		D0BAC943296309EF00902331 /* chris-mom-game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chris-mom-game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BAC946296309EF00902331 /* chris_mom_gameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chris_mom_gameApp.swift; sourceTree = "<group>"; };
 		D0BAC948296309EF00902331 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,9 +75,9 @@
 		D0BAC977296403CD00902331 /* TabViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViews.swift; sourceTree = "<group>"; };
 		D0BAC9792964047100902331 /* PlayerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerListView.swift; sourceTree = "<group>"; };
 		D0BAC97B2964082300902331 /* SendingDareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingDareView.swift; sourceTree = "<group>"; };
-		D0BAC97D2964083200902331 /* DareDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareDetailsView.swift; sourceTree = "<group>"; };
-		D0BAC97F2964203600902331 /* SendingDareViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingDareViewCell.swift; sourceTree = "<group>"; };
+		D0BAC97D2964083200902331 /* DareListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareListView.swift; sourceTree = "<group>"; };
 		D0BAC9812964282B00902331 /* DareDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DareDetailViewCell.swift; sourceTree = "<group>"; };
+		D0F5833829767B9E00766EBB /* TextAreaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAreaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,55 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D031151E29921ED400F43619 /* AuthenticationViews */ = {
+			isa = PBXGroup;
+			children = (
+				D0BAC96929632E8E00902331 /* RegisterView.swift */,
+				D0BAC96729632E8100902331 /* LoginView.swift */,
+				D0BAC96529632E7500902331 /* LandingView.swift */,
+			);
+			path = AuthenticationViews;
+			sourceTree = "<group>";
+		};
+		D031152029921F6600F43619 /* TabViews */ = {
+			isa = PBXGroup;
+			children = (
+				D03115232992202900F43619 /* DareList */,
+				D031152229921FF200F43619 /* SendDareViews */,
+				D0BAC977296403CD00902331 /* TabViews.swift */,
+				D0BAC975296346AC00902331 /* JoinButtonView.swift */,
+				D0BAC9792964047100902331 /* PlayerListView.swift */,
+			);
+			path = TabViews;
+			sourceTree = "<group>";
+		};
+		D031152129921FBC00F43619 /* AlertViews */ = {
+			isa = PBXGroup;
+			children = (
+				D00637FC296FC6AF00AAA2A3 /* BannerModifier.swift */,
+				D0A1BFA52993D4B800F434F0 /* LoaderView.swift */,
+			);
+			path = AlertViews;
+			sourceTree = "<group>";
+		};
+		D031152229921FF200F43619 /* SendDareViews */ = {
+			isa = PBXGroup;
+			children = (
+				D0F5833829767B9E00766EBB /* TextAreaView.swift */,
+				D0BAC97B2964082300902331 /* SendingDareView.swift */,
+			);
+			path = SendDareViews;
+			sourceTree = "<group>";
+		};
+		D03115232992202900F43619 /* DareList */ = {
+			isa = PBXGroup;
+			children = (
+				D0BAC9812964282B00902331 /* DareDetailViewCell.swift */,
+				D0BAC97D2964083200902331 /* DareListView.swift */,
+			);
+			path = DareList;
+			sourceTree = "<group>";
+		};
 		D04F523E296BD42700B010D8 /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +161,7 @@
 		D0BAC93A296309EF00902331 = {
 			isa = PBXGroup;
 			children = (
+				D052AA8829BAEBA600C25B76 /* .gitignore */,
 				D0BAC945296309EF00902331 /* chris-mom-game */,
 				D0BAC944296309EF00902331 /* Products */,
 				9BF8A5AEA82AC7C0C1B7272E /* Pods */,
@@ -129,7 +183,7 @@
 				D04F5241296BD47700B010D8 /* Info.plist */,
 				D04F523E296BD42700B010D8 /* images */,
 				D0BAC96429632DD700902331 /* modals */,
-				D0BAC96329632DB000902331 /* viewmodal */,
+				D0BAC96329632DB000902331 /* viewmodels */,
 				D0BAC95C2963284E00902331 /* services */,
 				D0BAC95929630A9700902331 /* views */,
 				D0BAC946296309EF00902331 /* chris_mom_gameApp.swift */,
@@ -155,21 +209,12 @@
 		D0BAC95929630A9700902331 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				D031151E29921ED400F43619 /* AuthenticationViews */,
+				D031152029921F6600F43619 /* TabViews */,
+				D031152129921FBC00F43619 /* AlertViews */,
 				D0BAC948296309EF00902331 /* ContentView.swift */,
 				D0BAC95A2963258200902331 /* AppDelegate.swift */,
-				D0BAC96529632E7500902331 /* LandingView.swift */,
-				D0BAC96729632E8100902331 /* LoginView.swift */,
-				D0BAC96929632E8E00902331 /* RegisterView.swift */,
 				D0BAC96D2963315100902331 /* MainView.swift */,
-				D0BAC975296346AC00902331 /* JoinButtonView.swift */,
-				D0BAC977296403CD00902331 /* TabViews.swift */,
-				D0BAC9792964047100902331 /* PlayerListView.swift */,
-				D0BAC97B2964082300902331 /* SendingDareView.swift */,
-				D0BAC97F2964203600902331 /* SendingDareViewCell.swift */,
-				D0804F3C29648ED200BBDD84 /* DareMessageTextView.swift */,
-				D0BAC97D2964083200902331 /* DareDetailsView.swift */,
-				D0BAC9812964282B00902331 /* DareDetailViewCell.swift */,
-				D00637FC296FC6AF00AAA2A3 /* BannerModifier.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -183,12 +228,13 @@
 			path = services;
 			sourceTree = "<group>";
 		};
-		D0BAC96329632DB000902331 /* viewmodal */ = {
+		D0BAC96329632DB000902331 /* viewmodels */ = {
 			isa = PBXGroup;
 			children = (
-				D00637FE296FE7E700AAA2A3 /* LoginViewModal.swift */,
+				D031152429922BAE00F43619 /* LoginViewModal.swift */,
+				D031152629922BBB00F43619 /* RegisterViewModal.swift */,
 			);
-			path = viewmodal;
+			path = viewmodels;
 			sourceTree = "<group>";
 		};
 		D0BAC96429632DD700902331 /* modals */ = {
@@ -272,6 +318,7 @@
 				D04F523D296BC74600B010D8 /* Assets.xcassets in Resources */,
 				D04F5240296BD44100B010D8 /* 43016.jpg in Resources */,
 				D04F5243296BD52D00B010D8 /* Launch Screen.storyboard in Resources */,
+				D052AA8929BAEBA600C25B76 /* .gitignore in Resources */,
 				D0BAC96229632D6400902331 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,25 +375,26 @@
 				D0BAC96A29632E8E00902331 /* RegisterView.swift in Sources */,
 				D0BAC950296309F000902331 /* Persistence.swift in Sources */,
 				D0BAC9722963351600902331 /* UserDetailsModal.swift in Sources */,
+				D0F5833929767B9E00766EBB /* TextAreaView.swift in Sources */,
 				D0BAC953296309F000902331 /* chris_mom_game.xcdatamodeld in Sources */,
+				D031152729922BBB00F43619 /* RegisterViewModal.swift in Sources */,
 				D0BAC96C2963308800902331 /* UserDetailService.swift in Sources */,
 				D0BAC96629632E7500902331 /* LandingView.swift in Sources */,
 				D0BAC976296346AC00902331 /* JoinButtonView.swift in Sources */,
-				D0BAC9802964203600902331 /* SendingDareViewCell.swift in Sources */,
 				D0BAC949296309EF00902331 /* ContentView.swift in Sources */,
 				D0BAC9822964282B00902331 /* DareDetailViewCell.swift in Sources */,
 				D0BAC95E296328A400902331 /* AuthenticationService.swift in Sources */,
 				D00637FD296FC6AF00AAA2A3 /* BannerModifier.swift in Sources */,
-				D0BAC97E2964083200902331 /* DareDetailsView.swift in Sources */,
+				D0BAC97E2964083200902331 /* DareListView.swift in Sources */,
 				D0BAC974296338B600902331 /* string-constants.swift in Sources */,
 				D0BAC97A2964047100902331 /* PlayerListView.swift in Sources */,
 				D0BAC978296403CD00902331 /* TabViews.swift in Sources */,
-				D00637FF296FE7E700AAA2A3 /* LoginViewModal.swift in Sources */,
-				D0804F3D29648ED300BBDD84 /* DareMessageTextView.swift in Sources */,
+				D031152529922BAE00F43619 /* LoginViewModal.swift in Sources */,
 				D0BAC96E2963315100902331 /* MainView.swift in Sources */,
 				D0BAC9702963321D00902331 /* Validators.swift in Sources */,
 				D0BAC95B2963258200902331 /* AppDelegate.swift in Sources */,
 				D0BAC96829632E8100902331 /* LoginView.swift in Sources */,
+				D0A1BFA62993D4B800F434F0 /* LoaderView.swift in Sources */,
 				D0BAC947296309EF00902331 /* chris_mom_gameApp.swift in Sources */,
 				D0BAC97C2964082300902331 /* SendingDareView.swift in Sources */,
 			);

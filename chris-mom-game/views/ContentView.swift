@@ -8,37 +8,37 @@
 import SwiftUI
 import CoreData
 import FirebaseAuth
+
 struct ContentView: View {
-    @ObservedObject var authentication = AuthenticationService()
+    @ObservedObject var authentication = AuthenticationService.shared
+    @EnvironmentObject var userDetailService : UserDetailService
     var body: some View {
-        
-        
-        if(authentication.isLoggedIn){
-            MainView(isDashboardView: $authentication.isLoggedIn)
-        }else{
-           LandingView()
+        VStack{
+            if(authentication.isLoggedIn){
+                MainView(isDashboardView: $authentication.isLoggedIn)
+            }else{
+                LandingView()
+            }
         }
-    
-        Text("")
         .onAppear{
+           
             Auth.auth().addStateDidChangeListener { auth, user in
+                
                 if(user != nil ){
-                    self.authentication.isLoggedIn.toggle()
+                    self.authentication.isLoggedIn = true
+                }else{
+                    self.authentication.isLoggedIn = false
                 }
             }
         }
-
-    }
-    
-    
-   
-}
-
-
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
+
+
+
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
 

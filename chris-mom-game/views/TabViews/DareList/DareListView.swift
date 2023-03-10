@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DareDetailsView: View {
+struct DareListView: View {
     let playerDetails :  [MemberDetailModel]
     
     init(playerDetails:  [MemberDetailModel]) {
@@ -15,14 +15,14 @@ struct DareDetailsView: View {
     }
     
     var isDareAvailable : Bool {
-        let value = self.playerDetails.filter{ $0.dareMessage != ""}
+        let value = self.playerDetails.filter{ $0.childName != ""}
         return value.count > 0 ? true : false
     }
     
     var body: some View {
         VStack{
             List {
-                Section(header: HStack{ Text("Dare Details").fontWeight(.bold).foregroundColor(.blue) }) {
+                Section(header:  Text("Dare Details")) {
                     if(isDareAvailable){
                         ForEach(self.playerDetails, id: \.self) { item in
                             if(item.childName != ""){
@@ -33,6 +33,7 @@ struct DareDetailsView: View {
                         Text("No one assigned the dare yet")
                     }
                 }
+               
             }
             
         }

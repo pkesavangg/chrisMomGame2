@@ -17,6 +17,8 @@ struct MemberDetailModel: Hashable, Codable {
     var dareMessage: String = ""
     var isCompleted: Bool = false
 }
+
+
 struct BannerData {
     var title:String
     var detail:String
